@@ -5,8 +5,8 @@
 
 <ul class="list-group">
   @for(item of reactiveMenu; track item.title){
-    <li class="list-group-item">
-      <a [routerLink]="item.route" routerLinkActive="active">{{item.title}}</a>
+    <li class="list-group">
+      <a type="btn" class="btn border" [routerLink]="item.route" routerLinkActive="btn-primary">{{item.title}}</a>
     </li>
   }
 </ul>
@@ -16,8 +16,8 @@
 
 <ul class="list-group">
   @for(item of authMenu; track item.title){
-    <li class="list-group-item">
-      <a [routerLink]="item.route" routerLinkActive="active">{{item.title}}</a>
+    <li class="list-group">
+      <a type="btn" class="btn border" [routerLink]="item.route" routerLinkActive="btn-primary">{{item.title}}</a>
     </li>
   }
 </ul>
@@ -27,8 +27,8 @@
 <ul class="list-group">
 
   @for(item of countryMenu; track item.title){
-    <li class="list-group-item">
-      <a [routerLink]="item.route" routerLinkActive="active">{{item.title}}</a>
+    <li class="list-group">
+      <a type="btn" class="btn border" [routerLink]="item.route" routerLinkActive="btn-primary">{{item.title}}</a>
     </li>
   }
 </ul>
